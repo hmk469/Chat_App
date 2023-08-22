@@ -1,0 +1,65 @@
+.JoinPage{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.JoinContainer{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.JoinContainer > img{
+    width: 6vmax;
+}
+
+.JoinContainer > h1{
+    color: white;
+    font-size: 2rem;
+    width: 80%; /* Adjusted for smaller screens */
+    border-bottom: 2px solid white;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#joinInput{
+    width: 80%; /* Adjusted for smaller screens */
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin: 2rem;
+    box-sizing: border-box;
+}
+
+.joinbtn{
+    width: 100%; /* Adjusted for smaller screens */
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: crimson;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .JoinContainer {
+        width: 80%; /* Adjusted width for smaller screens */
+    }
+
+    .JoinContainer > h1,
+    #joinInput,
+    .joinbtn {
+        width: 100%; /* Full width for smaller screens */
+    }
+}

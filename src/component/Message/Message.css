@@ -1,0 +1,42 @@
+.messagebox{
+    width: 40%;
+    background-color: gainsboro;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    clear: both;
+}
+
+.right{
+    float: right;
+    background-color: crimson;
+    color: white;
+}
+
+.left{
+    float: left;
+    background-color: rgb(124, 231, 124);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .messagebox {
+        width: 80%; /* Adjusted width for smaller screens */
+        margin: 0.5rem; /* Reduced margin for smaller screens */
+    }
+
+    .right,
+    .left {
+        width: 50%; /* Full width for smaller screens */
+        /* Remove float for proper alignment */
+    }
+
+    .right {
+        background-color: crimson;
+    }
+
+    .left {
+        background-color: rgb(124, 231, 124);
+    }
+}

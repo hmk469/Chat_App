@@ -1,0 +1,146 @@
+/* Base styles for chat page */
+.chatPage {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Responsive styles for chat container */
+.chatContainer {
+    background-color: white;
+    width: 95%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive styles for header */
+.header {
+    background-color: crimson;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Responsive styles for header elements */
+.header h2 {
+    margin: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.header img {
+    margin: 0.5rem;
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.header img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive styles for chat box */
+.chatBox {
+    border: 1px solid black;
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+/* Responsive styles for input box */
+.inputBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid black;
+}
+
+/* Responsive styles for chat input */
+#chatInput {
+    border: none;
+    height: 40px;
+
+    padding: 0.5rem;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+}
+
+/* Responsive styles for send button */
+.SendBtn {
+    background-color: crimson;
+    color: white;
+    border: none;
+    width: 25%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.SendBtn:hover {
+    background-color: rgb(199, 41, 73);
+}
+.SendBtn >img{
+    width: 40px;
+    height: 40px;
+}
+/* Responsive styles for chat messages */
+.messagebox {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.messagebox.left {
+    background-color: lightgray;
+    align-self: flex-start;
+}
+
+.messagebox.right {
+    background-color: lightblue;
+    align-self: flex-end;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .chatContainer {
+        max-width: 90%;
+    }
+    
+    .header h2 {
+        font-size: 1rem;
+    }
+
+    .SendBtn {
+        width: 30%;
+    }
+}
+
+@media (max-width: 576px) {
+    .chatContainer {
+        max-width: 100%;
+    }
+
+    .header h2 {
+        font-size: 0.9rem;
+    }
+
+    .SendBtn {
+        width: 30%;
+    }
+}
